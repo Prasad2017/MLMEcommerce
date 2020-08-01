@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lyt_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/bt_close"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:tint="@android:color/white"
+                android:layout_marginStart="10dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/arrowback" />
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="0dp" />
+
+            <TextView
+                android:id="@+id/name_toolbar"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingStart="10dp"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical"
+                android:text="SORT PRODUCT"
+                android:fontFamily="@font/montserratmedium"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/relevance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Relevance"
+                android:layout_gravity="center"
+                android:gravity="center|left"
+                android:paddingStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:checked="false"
+                android:fontFamily="@font/montserratmedium"
+                android:textSize="25sp" />
+
+            <CheckBox
+                android:id="@+id/lowToHigh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Price : Low To High"
+                android:layout_gravity="center"
+                android:gravity="center|left"
+                android:paddingStart="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/montserratmedium"
+                android:checked="false"
+                android:textSize="25sp" />
+
+            <CheckBox
+                android:id="@+id/highToLow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Price : High To Low"
+                android:layout_gravity="center"
+                android:gravity="center|left"
+                android:paddingStart="15dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:checked="false"
+                android:fontFamily="@font/montserratmedium"
+                android:textSize="25sp" />
+
+            <CheckBox
+                android:id="@+id/newArrivals"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="New Arrivals"
+                android:layout_gravity="center"
+                android:gravity="center|left"
+                android:paddingStart="15dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/montserratmedium"
+                android:checked="false"
+                android:textSize="25sp" />
+
+            <CheckBox
+                android:id="@+id/discount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Discount"
+                android:layout_gravity="center"
+                android:gravity="center|left"
+                android:paddingStart="15dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/montserratmedium"
+                android:checked="false"
+                android:textSize="25sp" />
+
+            <CheckBox
+                android:id="@+id/AToZ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name : A To Z"
+                android:layout_gravity="center"
+                android:gravity="center|left"
+                android:paddingStart="15dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/montserratmedium"
+                android:checked="false"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <View
+        android:id="@+id/lyt_spacer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+</LinearLayout>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="11dp"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/quickbackground">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/orangradient"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Refer and Earn"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="Invite your friends to MLM and get 20 % amount "
+                    android:textColor="#ffffff"
+                    android:textSize="12dp"
+                    />
+
+
+            </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/text2"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/quickbackground"
+                android:layout_marginBottom="2dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/ownamount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#fff"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:drawableRight="@drawable/ic_rightwhite"
+                    android:drawableLeft="@drawable/ic_walletwhite"
+                    android:text="   Balnce Amount"
+                    android:textColor="#fff"
+                    android:layout_marginBottom="10dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/quickbackground"
+                android:layout_marginBottom="2dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center"
+                    android:textColor="#fff"
+                    android:textSize="18dp"
+                    android:id="@+id/owncoins"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:text=" Balnce Coins"
+                    android:layout_marginTop="10dp"
+                    android:drawableRight="@drawable/ic_rightwhite"
+                    android:drawableLeft="@drawable/ic_walletwhite"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="#fff"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/login"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@drawable/btnxml"
+                    android:layout_marginBottom="24dp"
+                    android:padding="12dp"
+                    android:textColor="#000"
+                    android:text="REFER NOW"/>
+
+        </LinearLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+</LinearLayout>

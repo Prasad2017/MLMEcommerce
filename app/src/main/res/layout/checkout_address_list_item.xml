@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Prasad Sawant"
+        android:textSize="17sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:gravity="center|left"
+        android:fontFamily="@font/montserratbold"
+        android:textColor="@color/black"
+        android:paddingLeft="15dp"
+        android:layout_marginStart="20dp"
+        android:paddingRight="7dp"
+        android:paddingTop="7dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal">
+
+        <net.igenius.customcheckbox.CustomCheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            app:color_checked="@color/green_900"
+            app:color_tick="@android:color/white"
+            app:color_unchecked="@color/white"
+            app:color_unchecked_stroke="@color/colorPrimaryDark"
+            app:small_tick="@bool/default_circle_indicator_centered"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="5dp"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:text="qwertyuioplkjhgfdsaazxcvbnmnmbi"
+            android:textSize="15sp"
+            android:fontFamily="@font/montserratmedium"
+            android:layout_gravity="center"
+            android:gravity="center|left"
+            android:textColor="@color/black"
+            android:paddingLeft="7dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/deliveryAddress"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/gradient"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:fontFamily="@font/montserratmedium"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:text="Delivery to this address"/>
+
+    <TextView
+        android:id="@+id/editAddress"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/quantityback"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:visibility="gone"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:fontFamily="@font/montserratmedium"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:text="Edit Address"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+</LinearLayout>
